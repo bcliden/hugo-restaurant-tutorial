@@ -6,7 +6,7 @@ backend:
 media_folder: "src/img/gallery" # folder where user uploaded fiels should go
 
 collections:
-    name: food
+  - name: food
     label: "Food Item" # used in the UI, ie.: "New Post"
     folder: "site/content/food" # the path to the folder where the documents are stored
     create: true # allows new documents in this collection to be created
