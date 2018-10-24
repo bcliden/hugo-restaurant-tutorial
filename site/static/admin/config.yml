@@ -3,7 +3,7 @@ backend:
   repo: bliden/hugo-restaurant-tutorial
   branch: master
 
-media_folder: "src/img/gallery" # folder where user uploaded fiels should go
+media_folder: "src/img/gallery" # folder where user uploaded files should go
 
 collections:
   - name: food
@@ -11,30 +11,8 @@ collections:
     folder: "site/content/food" # the path to the folder where the documents are stored
     create: true # allows new documents in this collection to be created
     fields: #fields each doc in the colleciton should have
-    - {
-      label: "Name of Item",
-      name: "title",
-      widget: "string"
-    }
-    - {
-      label: "Supported Meals",
-      name: "categories",
-      widget: "list",
-      default: ["lunch", "dinner"]
-    }
-    - {
-      label: "Ingredients/Description",
-      name: "description",
-      widget: "text"
-    }
-    - {
-      label: "Type of Food",
-      name: "type",
-      widget: "string",
-      default: "raw bar"
-    }
-    - {
-      label: "Price",
-      name: "price",
-      widget: "string"
-    }
+      - {label: "Name of Item", name: "title", widget: "string"}
+      - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]} 
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
+      - {label: "Price", name: "price", widget: "string"}
